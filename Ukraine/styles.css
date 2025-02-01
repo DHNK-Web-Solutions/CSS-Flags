@@ -14,3 +14,10 @@ h1 {
   height: 200px;
   background-color: #015bbb;
 }
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
