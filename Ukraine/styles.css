@@ -1,0 +1,16 @@
+.box {
+  width: 600px;
+}
+h1 {
+  text-align: center;
+}
+.tophalf {
+  width: 100%;
+  background-color: #fed501;
+  height: 400px;
+}
+.tophalf div {
+  width: 100%;
+  height: 200px;
+  background-color: #015bbb;
+}
