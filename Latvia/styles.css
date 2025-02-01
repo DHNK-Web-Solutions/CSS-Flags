@@ -1,0 +1,21 @@
+.box {
+  width: 600px;
+}
+h1 {
+  text-align: center;
+}
+.red {
+  position: relative;
+  background-color: #9d1c32;
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.red div {
+  position: absolute;
+  top: 125px;
+  background-color: #ffffff;
+  height: 50px;
+  width: 600px;
+}
