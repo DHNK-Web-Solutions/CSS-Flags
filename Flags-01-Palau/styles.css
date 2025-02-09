@@ -7,7 +7,7 @@
   margin: 20px auto 0 auto;
   padding-bottom: 0;
   border-radius: 50px;
-  height: 95vh;
+  height: auto;
 }
 .palau {
   margin: 30px auto;
@@ -42,4 +42,46 @@ a {
   padding: 5px 20px;
   border-radius: 5px;
   background-color: darkcyan;
+}
+/* Media Queries Start Here  */
+@media (max-width: 320px) {
+  :root {
+    --flag-height: 100px;
+  }
+  h1.title {
+    font-size: 15vw;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 321px) and (max-width: 420px) {
+  :root {
+    --flag-height: 150px;
+  }
+  h1.title {
+    font-size: 50px;
+  }
+}
+@media (min-width: 421px) and (max-width: 600px) {
+  :root {
+    --flag-height: 200px;
+  }
+  h1.title {
+    font-size: 10vw;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  :root {
+    --flag-height: 250px;
+  }
 }
