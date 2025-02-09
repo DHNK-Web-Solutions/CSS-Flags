@@ -1,4 +1,17 @@
-
+:root {
+  --color1: #143D60;
+  --color2: #27667B;
+  --color3: #A0C878;
+  --color4: #DDEB9D;
+}
+body {
+  background-color: var(--color4);
+}
+h1 {
+  color: var(--color1);
+  text-align: center;
+  font-size: 3rem;
+}
 .open-sans-h2 {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
@@ -16,4 +29,20 @@
   font-size: 50px;
   font-weight: 400;
   font-style: normal;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px 20px;
+}
+.container > a {
+  background-color: var(--color1);
+  padding: 30px;
+  border: 2px solid var(--color2);
+  border-radius: 5px;
+  color: var(--color3);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
 }
