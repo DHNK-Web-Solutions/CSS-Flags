@@ -1,0 +1,39 @@
+:root {
+  --flag-height: 300px;
+}
+.box {
+  width: calc(var(--flag-height) * 2);
+}
+h1 {
+  text-align: center;
+}
+.red {
+  position: relative;
+  background-color: #9d1c32;
+  width: calc(var(--flag-height) * 2);
+  height: var(--flag-height);
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.red div {
+  position: absolute;
+  top: calc(var(--flag-height) * 2/5);
+  background-color: #ffffff;
+  height: calc(var(--flag-height) / 5);
+  width: calc(var(--flag-height) * 2);
+}
+p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: darkcyan;
+}

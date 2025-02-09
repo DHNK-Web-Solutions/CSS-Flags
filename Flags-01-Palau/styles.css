@@ -30,3 +30,11 @@ p {
 h2 {
   text-align: center;
 }
+a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: darkcyan;
+}
