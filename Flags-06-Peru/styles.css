@@ -1,0 +1,30 @@
+:root {
+  --flag-height: 400px;
+  --flag-width: calc(var(--flag-height) * 3/2);
+  --color-red: #D91023;
+  --color-white: #ffffff;
+}
+.box {
+  width: var(--flag-width);
+}
+h1 {
+  text-align: center;
+}
+.red {
+  position: relative;
+  background-color: var(--color-red);
+  width: var(--flag-width);
+  height: var(--flag-height);
+  border: 1px solid;
+  border-radius: 5px;
+}
+.white {
+  position: absolute;
+  left: calc(var(--flag-width) / 3);
+  background-color: var(--color-white);
+  width: calc(var(--flag-width) / 3);
+  height: var(--flag-height);
+}
+h2, p {
+  text-align: center;
+}

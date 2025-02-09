@@ -1,0 +1,26 @@
+:root {
+  --flag-height: 300px;
+  --flag-width: calc(var(--flag-height) * 8/5);
+  --color-red: #de0c39;
+  --color-white: #ffffff;
+}
+.box {
+  width: var(--flag-width);
+}
+h1, h2, p {
+  text-align: center;
+}
+.white {
+  position: relative;
+  width: var(--flag-width);
+  height: var(--flag-height);
+  border: 1px solid;
+  border-radius: 5px;
+}
+.red {
+  position: absolute;
+  top: calc(var(--flag-height) / 2);
+  width: var(--flag-width);
+  height: calc(var(--flag-height) / 2);
+  background-color: var(--color-red);
+}
