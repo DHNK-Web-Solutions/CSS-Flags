@@ -1,5 +1,5 @@
 :root {
-  --flag-height: 500px;
+  --flag-height: 300px;
 }
 .box {
   width: calc(var(--flag-height) * 3/2);
