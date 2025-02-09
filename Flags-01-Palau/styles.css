@@ -2,9 +2,15 @@
   --flag-height: 300px;
 }
 .box {
-  width: calc(var(--flag-height) * 8/5);
+  width: 80%;
+  border: 1px solid;
+  margin: 20px auto 0 auto;
+  padding-bottom: 0;
+  border-radius: 50px;
+  height: 95vh;
 }
 .palau {
+  margin: 30px auto;
   position: relative;
   background-color: #009afe;
   height: var(--flag-height);
@@ -12,7 +18,6 @@
 }
 h1 {
   text-align: center;
-  margin: 0;
 }
 .palau div {
   position: absolute;
