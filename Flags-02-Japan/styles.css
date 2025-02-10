@@ -1,32 +1,64 @@
 :root {
   --flag-height: 300px;
+  --flag-width: calc((var(--flag-height)) * 3/2);
+  --back-color: #ffffff;
+  --circle-color: #bf0125;
 }
 .box {
-  width: calc(var(--flag-height) * 3/2);
+  width: 80vw;
+  border: 1px solid;
+  height: auto;
+  border-radius: 50px;
+  margin: 30px auto;
 }
 h1 {
   text-align: center;
 }
 .backcolor {
   position: relative;
-  background-color: #ffffff;
-  width: 100%;
+  background-color: var(--back-color);
+  width: var(--flag-width);
   height: var(--flag-height);
   border: 1px solid black;
   border-radius: 5px;
+  margin: 30px auto;
 }
 .circle {
   position: absolute;
   top: calc(var(--flag-height) / 5);
   left: calc(var(--flag-height) * 9/20);
-  background-color: #bf0125;
+  background-color: var(--circle-color);
   height: calc(var(--flag-height) * 3/5);
   width: calc(var(--flag-height) * 3/5);
   border-radius: 50%;
 }
+.container1 {
+  display: flex;
+  justify-content: space-between;
+}
+.placeholder {
+  width: 25%;
+}
+.color-palette {
+  width: 30%;
+}
 p {
+  display: inline;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;
+  margin: 5px auto;
+}
+.color1, .color2 {
+  border: 1px solid;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+.color1 {
+  background-color: var(--back-color);
+}
+.color2 {
+  background-color: var(--circle-color);
 }
 h2 {
   text-align: center;
@@ -38,4 +70,48 @@ a {
   padding: 5px 20px;
   border-radius: 5px;
   background-color: darkcyan;
+}
+@media (max-width: 320px) {
+  :root {
+    --flag-height: 100px;
+  }
+  h1.title {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .color1, .color2 {
+    width: 8px;
+    height: 8px;
+  }
+}
+@media (min-width: 321px) and (max-width: 420px) {
+  :root {
+    --flag-height: 150px;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 20px;
+  }
+  .color1, .color2 {
+    width: 15px;
+    height: 15px;
+  }
+  .color-palette {
+    width: 50%;
+  }
+}
+@media (min-width: 421px) and (max-width: 600px) {
+  :root {
+    --flag-height: 225px;
+  }
 }
