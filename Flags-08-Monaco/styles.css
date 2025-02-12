@@ -1,0 +1,27 @@
+:root {
+  --color1: #ce2029;
+  --color2: #ffffff;
+  --flag-height: 300px;
+  --flag-width: calc(var(--flag-height) * 4/5);
+}
+.box {
+  border: 1px solid;
+  border-radius: 50px;
+  margin: 30px 50px;
+}
+h1,h2 {
+  text-align: center;
+}
+.white {
+  background-color: var(--color1);
+  height: var(--flag-height);
+  width: var(--flag-width);
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+.red {
+  background-color: var(--color2);
+  height: calc(var(--flag-height) / 2);
+  width: var(--flag-width);
+}
