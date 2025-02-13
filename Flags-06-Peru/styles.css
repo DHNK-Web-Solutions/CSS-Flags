@@ -5,7 +5,9 @@
   --color-white: #ffffff;
 }
 .box {
-  width: var(--flag-width);
+  width: 90vw;
+  border: 1px solid;
+  border-radius: 50px;
 }
 h1 {
   text-align: center;
@@ -27,4 +29,81 @@ h1 {
 }
 h2, p {
   text-align: center;
+}
+/* Media Queries */
+/* Mobile S 320px */
+@media (max-width: 320px) {
+  :root {
+    --flag-height: 30vw;
+  }
+  h1.title {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  span {
+    height: 10px;
+    width: 10px;
+  }
+}
+/* Mobile M 375px */
+@media (min-width: 321px) and (max-width: 375px) {
+  :root {
+    --flag-height: 100px;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  span {
+    height: 14px;
+    width: 14px;
+  }
+}
+/* Mobile L 425px */
+@media (min-width: 376px) and (max-width: 425px) {
+  :root {
+    --flag-height: 140px;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  span {
+    height: 14px;
+    width: 14px;
+  }
+}
+/* Table 768px */
+@media (min-width: 426px) {
+  :root {
+    --flag-height: 150px;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  span {
+    height: 14px;
+    width: 14px;
+  }
 }
