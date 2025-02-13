@@ -1,14 +1,21 @@
 :root {
-  --flag-height: 300px;
+  --flag-height: 200px;
   --flag-width: calc(var(--flag-height) * 8/5);
   --color-red: #de0c39;
   --color-white: #ffffff;
 }
 .box {
-  width: var(--flag-width);
+  width: 80vw;
+  border: 1px solid;
+  margin: 20px auto;
+  height: 90vh;
+  border-radius: 50px;
 }
 h1, h2, p {
   text-align: center;
+}
+p {
+  font-size: 20px;
 }
 .white {
   position: relative;
@@ -16,6 +23,7 @@ h1, h2, p {
   height: var(--flag-height);
   border: 1px solid;
   border-radius: 5px;
+  margin: 20px auto;
 }
 .red {
   position: absolute;
@@ -23,4 +31,52 @@ h1, h2, p {
   width: var(--flag-width);
   height: calc(var(--flag-height) / 2);
   background-color: var(--color-red);
+}
+span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid;
+}
+.color1 {
+  background-color: var(--color-red);
+}
+.color2 {
+  background-color: var(--color-white);
+}
+@media (max-width: 320px) {
+  :root {
+    --flag-height: 50vw;
+  }
+  h1.title {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  span {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (min-width: 321px) and (max-width: 420px) {
+  :root {
+    --flag-height: 130px;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 20px;
+  }
+  span {
+    width: 15px;
+    height: 15px;
+  }
 }
