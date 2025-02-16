@@ -1,0 +1,52 @@
+:root {
+  --primary-color1: #00778B;
+  --primary-color2: #ffc72c;
+  --primary-color3: #000000;
+  --flag-height: 200px;
+  --flag-width: calc(var(--flag-height) * 2);
+}
+.box-bahamas {
+  width: 90vw;
+  border: 1px solid;
+  border-radius: 50px;
+  margin: 50px auto;
+  text-align: center;
+}
+.primary-color1 {
+  position: relative;
+  background-color: var(--primary-color1);
+  height: var(--flag-height);
+  width: var(--flag-width);
+  margin: 20px auto;
+  border: 1px solid;
+}
+.primary-color2 {
+  position: absolute;
+  background-color: var(--primary-color2);
+  height: calc(var(--flag-height) / 3);
+  width: 100%;
+  top: calc(var(--flag-height) / 3);
+}
+.primary-color3 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: calc(var(--flag-height) / 2) solid transparent;
+  border-bottom: calc(var(--flag-height) / 2) solid transparent;
+  border-left: calc(1/2 * var(--flag-height) * sqrt(3)) solid var(--primary-color3);
+}
+span {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid;
+}
+.span-color1 {
+  background-color: var(--primary-color1);
+}
+.span-color2 {
+  background-color: var(--primary-color2);
+}
+.span-color3 {
+  background-color: var(--primary-color3);
+}
