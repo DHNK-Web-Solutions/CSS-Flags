@@ -1,8 +1,8 @@
 :root {
-  --base-color: #ce2029;
+  --base-color: 	#FF0000;
   --color-white: #ffffff;
-  --flag-height: 300px;
-  --flag-width: calc(var(--flag-height) * 4/5);
+  --flag-height: 200px;
+  --flag-width: calc(var(--flag-height) * 3/2);
 }
 .box {
   border: 1px solid;
@@ -47,7 +47,7 @@ h2 {
 }
 @media (max-width: 320px) {
   :root {
-    --flag-height: 80vw;
+    --flag-height: 55vw;
   }
   .box {
     margin: 20px auto;
@@ -68,7 +68,7 @@ h2 {
 }
 @media (min-width: 321px) and (max-width: 420px) {
   :root {
-    --flag-height: 80vw;
+    --flag-height: 60vw;
   }
   .box {
     margin: 20px auto;
@@ -89,7 +89,7 @@ h2 {
 }
 @media (min-width: 421px) and (max-width: 768px) {
   :root {
-    --flag-height: 350px;
+    --flag-height: 200px;
   }
   h1.title {
     font-size: 50px;
