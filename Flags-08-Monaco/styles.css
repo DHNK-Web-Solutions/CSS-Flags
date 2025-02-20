@@ -4,13 +4,16 @@
   --flag-height: 300px;
   --flag-width: calc(var(--flag-height) * 4/5);
 }
-.box {
+.box-monaco {
   border: 1px solid;
   border-radius: 50px;
   margin: 30px 50px;
 }
 h1,h2, p {
   text-align: center;
+}
+h1.title {
+  font-size: 50px;
 }
 .white {
   background-color: var(--color-white);
@@ -49,8 +52,8 @@ h2 {
   :root {
     --flag-height: 80vw;
   }
-  .box {
-    margin: 20px auto;
+  .box-monaco {
+    margin: 15px auto;
   }
   h1.title {
     font-size: 30px;
@@ -70,7 +73,7 @@ h2 {
   :root {
     --flag-height: 80vw;
   }
-  .box {
+  .box-monaco {
     margin: 20px auto;
   }
   h1.title {
