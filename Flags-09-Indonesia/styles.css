@@ -4,13 +4,16 @@
   --flag-height: 200px;
   --flag-width: calc(var(--flag-height) * 3/2);
 }
-.box {
+.box-indonesia {
   border: 1px solid;
   border-radius: 50px;
   margin: 30px 50px;
 }
 h1,h2, p {
   text-align: center;
+}
+h1.title {
+  font-size: 50px;
 }
 .white {
   background-color: var(--color-white);
@@ -49,8 +52,8 @@ h2 {
   :root {
     --flag-height: 55vw;
   }
-  .box {
-    margin: 20px auto;
+  .box-indonesia {
+    margin: 15px auto;
   }
   h1.title {
     font-size: 30px;
@@ -70,7 +73,7 @@ h2 {
   :root {
     --flag-height: 60vw;
   }
-  .box {
+  .box-indonesia {
     margin: 20px auto;
   }
   h1.title {
