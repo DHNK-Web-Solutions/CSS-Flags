@@ -2,15 +2,18 @@
   --primary-color1: #00778B;
   --primary-color2: #ffc72c;
   --primary-color3: #000000;
-  --flag-height: 200px;
+  --flag-height: 150px;
   --flag-width: calc(var(--flag-height) * 2);
 }
 .box-bahamas {
-  width: 90vw;
+  height: 90vh;
   border: 1px solid;
   border-radius: 50px;
-  margin: 50px auto;
+  margin: 30px 50px;
   text-align: center;
+}
+h1.title {
+  font-size: 50px;
 }
 .primary-color1 {
   position: relative;
@@ -49,4 +52,76 @@ span {
 }
 .span-color3 {
   background-color: var(--primary-color3);
+}
+@media (max-width: 320px) {
+  :root {
+    --flag-height: 30vw;
+  }
+  .box-bahamas {
+    margin: 15px auto;
+    height: 80vh;
+  }
+  h1.title {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 321px) and (max-width: 420px) {
+  :root {
+    --flag-height: 30vw;
+  }
+  .box-bahamas {
+    margin: 15px auto;
+    height: 90vh;
+  }
+  h1.title {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 421px) and (max-width: 600px) {
+  :root {
+    --flag-height: 25vw;
+  }
+  .box-bahamas {
+    margin: 20px 20px;
+    height: 90vh;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  :root {
+    --flag-height: 150px;
+  }
+  .box-bahamas {
+    margin: 20px 30px;
+    height: 90vh;
+  }
+  h1.title {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+  }
 }
