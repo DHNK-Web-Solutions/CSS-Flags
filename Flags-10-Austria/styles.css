@@ -4,7 +4,7 @@
   --flag-height: 200px;
   --flag-width: calc(var(--flag-height) * 3/2);
 }
-.box {
+.box-austia {
   border: 1px solid;
   border-radius: 50px;
   margin: 30px 50px;
@@ -54,11 +54,14 @@ p {
 h2 {
   font-size: 30px;
 }
+h1.title {
+  font-size: 50px;
+}
 @media (max-width: 320px) {
   :root {
     --flag-height: 55vw;
   }
-  .box {
+  .box-austia {
     margin: 20px auto;
   }
   h1.title {
@@ -79,7 +82,7 @@ h2 {
   :root {
     --flag-height: 60vw;
   }
-  .box {
+  .box-austia {
     margin: 20px auto;
   }
   h1.title {
