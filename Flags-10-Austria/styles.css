@@ -4,7 +4,8 @@
   --flag-height: 200px;
   --flag-width: calc(var(--flag-height) * 3/2);
 }
-.box-austia {
+.box-austria {
+  height: 90vh;
   border: 1px solid;
   border-radius: 50px;
   margin: 30px 50px;
@@ -61,7 +62,7 @@ h1.title {
   :root {
     --flag-height: 55vw;
   }
-  .box-austia {
+  .box-austria {
     margin: 20px auto;
   }
   h1.title {
@@ -82,7 +83,7 @@ h1.title {
   :root {
     --flag-height: 60vw;
   }
-  .box-austia {
+  .box-austria {
     margin: 20px auto;
   }
   h1.title {
@@ -99,9 +100,27 @@ h1.title {
     width: 15px;
   }
 }
-@media (min-width: 421px) and (max-width: 768px) {
+@media (min-width: 421px) and (max-width: 600px) {
   :root {
-    --flag-height: 200px;
+    --flag-height: 150px;
+  }
+  h1.title {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+  span {
+    height: 15px;
+    width: 15px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  :root {
+    --flag-height: 180px;
   }
   h1.title {
     font-size: 50px;
