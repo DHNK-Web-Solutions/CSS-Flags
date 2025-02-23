@@ -1,10 +1,10 @@
 :root {
-  --primary-color1: #DA291C;
+  --primary-color1: #002c6d;
   --primary-color2: #ffffff;
   --flag-height: 200px;
-  --flag-width: calc(var(--flag-height) * 5/3);
+  --flag-width: calc(var(--flag-height) * 18/11);
 }
-.box-bahrain {
+.box-finland {
   height: 90vh;
   border: 1px solid;
   border-radius: 50px;
@@ -16,45 +16,31 @@ h1.title {
 }
 .back-color {
   position: relative;
-  background-color: var(--primary-color1);
-  height: var(--flag-height);
-  width: var(--flag-width);
+  background-color: var(--primary-color2);
   margin: 20px auto;
   border: 1px solid;
   border-radius: 5px;
 }
-.white {
+.back-color {
+  position: relative;
   background-color: var(--primary-color2);
-}
-.rect {
   height: var(--flag-height);
-  width: calc(var(--flag-width) * 1/4);
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  width: var(--flag-width);
 }
-.triangle {
+.vertical {
   position: absolute;
-  width: 0;
-  height: 0;
-  border-top: calc(var(--flag-height) * 1/10) solid transparent;
-  border-bottom: calc(var(--flag-height) * 1/10) solid transparent;
-  border-left: calc(var(--flag-width) * 3/20) solid var(--primary-color2);
-  left: calc(var(--flag-width) * 1/4);
-  top: 0;
+  background-color: var(--primary-color1);
+  height: var(--flag-height);
+  width: calc(var(--flag-width) * 1/6);
+  left: calc(var(--flag-width) * 5/18);
 }
-.t2 {
-  top: calc(var(--flag-height) * 1/5);
+.horizontal {
+  position: absolute;
+  background-color: var(--primary-color1);
+  width: var(--flag-width);
+  height: calc(var(--flag-height) * 3/11);
+  top: calc(var(--flag-height) * 4/11);
 }
-.t3 {
-  top: calc(var(--flag-height) * 2/5);
-}
-.t4 {
-  top: calc(var(--flag-height) * 3/5);
-}
-.t5 {
-  top: calc(var(--flag-height) * 4/5);
-}
-
 span {
   display: inline-block;
   height: 15px;
@@ -71,7 +57,7 @@ span {
   :root {
     --flag-height: 50vw;
   }
-  .box-bahrain {
+  .box-finland {
     margin: 15px auto;
     height: 80vh;
   }
@@ -89,7 +75,7 @@ span {
   :root {
     --flag-height: 35vw;
   }
-  .box-bahrain {
+  .box-finland {
     margin: 15px auto;
     height: 90vh;
   }
@@ -107,7 +93,7 @@ span {
   :root {
     --flag-height: 150px;
   }
-  .box-bahrain {
+  .box-finland {
     margin: 20px 20px;
     height: 90vh;
   }
@@ -125,7 +111,7 @@ span {
   :root {
     --flag-height: 180px;
   }
-  .box-bahrain {
+  .box-finland {
     margin: 20px 30px;
     height: 90vh;
   }
