@@ -94,7 +94,28 @@ h2 {
     width: 15px;
   }
 }
-@media (min-width: 421px) and (max-width: 768px) {
+@media (min-width: 421px) and (max-width: 600px) {
+  :root {
+    --flag-height: 200px;
+  }
+  .box-bangladesh {
+    margin: 30px auto;
+  }
+  h1.title {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+  span {
+    height: 15px;
+    width: 15px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
   :root {
     --flag-height: 230px;
   }
