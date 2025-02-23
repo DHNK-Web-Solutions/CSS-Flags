@@ -57,6 +57,10 @@ span {
   :root {
     --flag-height: 42vw;
   }
+  span {
+    height: 12px;
+    width: 12px;
+  }
   .box-bahamas {
     margin: 15px auto;
     height: 80vh;

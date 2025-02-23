@@ -57,6 +57,10 @@ span {
   :root {
     --flag-height: 50vw;
   }
+  span {
+    height: 12px;
+    width: 12px;
+  }
   .box-sweden {
     margin: 15px auto;
     height: 80vh;
@@ -73,7 +77,7 @@ span {
 }
 @media (min-width: 321px) and (max-width: 420px) {
   :root {
-    --flag-height: 35vw;
+    --flag-height: 50vw;
   }
   .box-sweden {
     margin: 15px auto;
