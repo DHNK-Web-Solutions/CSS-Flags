@@ -3,7 +3,7 @@
   --primary-color2: #F4E400;
   --primary-color3: #007A33;
   --flag-height: 220px;
-  --flag-width: calc(var(--flag-height) * 22/15);
+  --flag-width: calc(var(--flag-height) * 3/2);
   --div-height: calc(var(--flag-height) * 1/3);
 }
 .box-bolivia {
