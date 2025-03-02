@@ -1,13 +1,13 @@
 :root {
-  --primary-color1: #A51931;
-  --primary-color2: #F4F5F8;
-  --primary-color3: #2D2A4A;
+  --primary-color1: #008850;
+  --primary-color2: #FCD20F;
+  --primary-color3: #E90929;
   --flag-height: 220px;
-  --flag-width: calc(var(--flag-height) * 9/6);
-  --div-height: calc(var(--flag-height) * 1/6);
-  --div3-height: calc(var(--flag-height) * 2/6)
+  --flag-width: calc(var(--flag-height) * 15/10);
+  --div-height: calc(var(--flag-height) * 1/2);
+  --div-width: calc(var(--flag-width) * 6/15);
 }
-.box-thailand {
+.box-benin {
   height: 90vh;
   border: 1px solid;
   margin: 20px 50px;
@@ -31,35 +31,31 @@ span {
 .div1 {
   position: absolute;
   height: var(--div-height);
-  background-color: var(--primary-color1);
-  width: var(--flag-width);
-}
-.div1.top {
-  top:0;
-  border-radius: 4px 4px 0 0;
+  background-color: var(--primary-color2);
+  border-radius: 0 4px 0 0;
+  top: 0;
+  width: calc(var(--flag-width) * 9/15);
+  left: calc(var(--flag-width) * 6/15);
 }
 .div1.bottom {
-  top: calc(var(--flag-height) * 5/6);
   border-radius: 0 0 4px 4px;
-}
-.div2.bottom {
-  top: calc(var(--flag-height) * 4/6);
 }
 .div2 {
   position: absolute;
+  top: calc(var(--flag-height) * 5/10);
+  left: calc(var(--flag-width) * 6/15);
   height: var(--div-height);
-  background-color: var(--primary-color2);
-  width: var(--flag-width)
-}
-.div2.top {
-  top: calc(var(--flag-height) * 1/6);
+  background-color: var(--primary-color3);
+  width: calc(var(--flag-width) * 9/15);
+  border-radius: 0 0 4px 0;
 }
 .div3 {
   position: absolute;
-  top: calc(var(--flag-height) * 2/6);
-  height: var(--div3-height);
-  background-color: var(--primary-color3);
-  width: var(--flag-width);
+  width: calc(var(--flag-width) * 6/15);
+  background-color: var(--primary-color1);
+  height: 100%;
+  left: 0;
+  border-radius: 4px 0 0 4px;
 }
 span.color1 {
   background-color: var(--primary-color1);
@@ -88,7 +84,7 @@ p {
     height: 12px;
     width: 12px;
   }
-  .box-thailand {
+  .box-benin {
     margin: 15px auto;
     height: 90vh;
   }
@@ -106,7 +102,7 @@ p {
   :root {
     --flag-height: 50vw;
   }
-  .box-thailand {
+  .box-benin {
     margin: 15px auto;
     height: 90vh;
   }
@@ -124,7 +120,7 @@ p {
   :root {
     --flag-height: 180px;
   }
-  .box-thailand {
+  .box-benin {
     margin: 20px 20px;
     height: 90vh;
   }
@@ -142,7 +138,7 @@ p {
   :root {
     --flag-height: 200px;
   }
-  .box-thailand {
+  .box-benin {
     margin: 20px 30px;
     height: 90vh;
   }
