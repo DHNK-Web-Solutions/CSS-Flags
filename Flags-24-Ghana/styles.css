@@ -1,11 +1,12 @@
 :root {
-  /* --primary-color1: #CF0921;
+  --primary-color1: #CF0921;
   --primary-color2: #FCD20F;
   --primary-color3: #006B3D;
-  --primary-color4: #000000; */
+  --primary-color4: #000000;
   --flag-height: 220px;
-  --flag-width: calc(var(--flag-height) * 3/2);
-  --div-height: calc(var(--flag-height) * 1/3);
+  --flag-width: calc(var(--flag-height) * 9/6);
+  --div-height: calc(var(--flag-height) * 2/6);
+  --star-height: calc(var(--flag-height) * 2.16/6);
 }
 .box-ghana {
   height: 90vh;
@@ -16,52 +17,57 @@
 }
 .flag {
   position: relative;
-  /* border: 1px solid; */
+  /* border: 1px solid; */ 
   height: var(--flag-height);
   width: var(--flag-width);
   margin: 0 auto;
   border-radius: 5px;
+  border: 1px solid;
 }
 .div1 {
   position: absolute;
   top: 0;
   background-color: var(--primary-color1);
-  width: var(--flag-width);
   height: var(--div-height);
+  width: 100%;
   border-radius: 4px 4px 0 0;
 }
 .div2 {
   position: absolute;
   top: calc(var(--flag-height) * 1/3);
   background-color: var(--primary-color2);
-  width: var(--flag-width);
   height: var(--div-height);
+  width: 100%;
+
 }
 .div3 {
   position: absolute;
   top: calc(var(--flag-height) * 2/3);
   background-color: var(--primary-color3);
-  width: var(--flag-width);
   height: var(--div-height);
   border-radius: 0 0 4px 4px;
+  width: 100%;
 }
 .border {
-  height: 300px;
-  width: 300px;
-  border: 1px solid;
-}
-#circle {
-  height: 300px;
-  width: 300px;
-  clip-path: polygon(
-    50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
-  background-color: black;
-
+  position: absolute;
+  top: var(--div-height);
+  height: var(--div-height);
+  aspect-ratio: 1/1;
+  left: calc(var(--flag-width) * 3.5/9);
 }
 #star {
-  background-color: white;
-  clip-path: polygon();
-
+  height: var(--star-height);
+  aspect-ratio: 1/1;
+  clip-path: polygon(
+    50% 0,
+    79% 90%,
+    2% 35%,
+    98% 35%,
+    21% 90%);
+  background-color: black;
+  top: var(--div-height);
+  left: ;
+  border: 1px solid;
 }
 span {
   border: 1px solid;
