@@ -1,14 +1,11 @@
 :root {
-  --primary-color1: #CF0921;
-  --primary-color2: #FCD20F;
-  --primary-color3: #006B3D;
-  --primary-color4: #000000;
+  --primary-color1: #a6c6dd;
+  --primary-color2: #FFFFFF;
+  --primary-color3: #000000;
   --flag-height: 220px;
-  --flag-width: calc(var(--flag-height) * 9/6);
-  --div-height: calc(var(--flag-height) * 2/6);
-  --star-height: calc(var(--flag-height) * 2.16/6);
+  --flag-width: calc(var(--flag-height) * 36/24);
 }
-.box-ghana {
+.box-botswana {
   height: 90vh;
   border: 1px solid;
   margin: 20px 50px;
@@ -26,47 +23,40 @@
 }
 .div1 {
   position: absolute;
-  top: 0;
+  height: calc(var(--flag-height) * 9/24);
+  width: var(--flag-width);
   background-color: var(--primary-color1);
-  height: var(--div-height);
-  width: 100%;
+  top: 0;
   border-radius: 4px 4px 0 0;
 }
 .div2 {
   position: absolute;
-  top: calc(var(--flag-height) * 1/3);
+  height: calc(var(--flag-height) * 1/24);
+  width: var(--flag-width);
   background-color: var(--primary-color2);
-  height: var(--div-height);
-  width: 100%;
-
+  top: calc(var(--flag-height) * 9/24)
 }
 .div3 {
   position: absolute;
-  top: calc(var(--flag-height) * 2/3);
+  height: calc(var(--flag-height) * 4/24);
+  width: var(--flag-width);
   background-color: var(--primary-color3);
-  height: var(--div-height);
-  border-radius: 0 0 4px 4px;
-  width: 100%;
+  top: calc(var(--flag-height) * 10/24);
 }
-.border {
+.div4 {
   position: absolute;
-  top: var(--div-height);
-  height: var(--div-height);
-  aspect-ratio: 1/1;
-  left: calc(var(--flag-width) * 3.5/9);
+  height: calc(var(--flag-height) * 1/24);
+  width: var(--flag-width);
+  background-color: var(--primary-color2);
+  top: calc(var(--flag-height) * 14/24)
 }
-#star {
-  height: var(--star-height);
-  aspect-ratio: 1/1;
-  clip-path: polygon(
-    50% 0,
-    79% 90%,
-    2% 35%,
-    98% 35%,
-    21% 90%);
-  background-color: black;
-  top: var(--div-height);
-  border: 1px solid;
+.div5 {
+  position: absolute;
+  height: calc(var(--flag-height) * 9/24);
+  width: var(--flag-width);
+  background-color: var(--primary-color1);
+  top: calc(var(--flag-height) * 15/24);
+  border-radius: 0 0 4px 4px;
 }
 span {
   border: 1px solid;
@@ -82,9 +72,6 @@ span.color2 {
 }
 span.color3 {
   background-color: var(--primary-color3);
-}
-span.color4 {
-  background-color: var(--primary-color4);
 }
 h1.title {
   font-size: 50px;
@@ -104,7 +91,7 @@ p {
     height: 12px;
     width: 12px;
   }
-  .box-ghana {
+  .box-botswana {
     margin: 15px auto;
     height: 90vh;
   }
@@ -122,7 +109,7 @@ p {
   :root {
     --flag-height: 50vw;
   }
-  .box-ghana {
+  .box-botswana {
     margin: 15px auto;
     height: 90vh;
   }
@@ -140,7 +127,7 @@ p {
   :root {
     --flag-height: 180px;
   }
-  .box-ghana {
+  .box-botswana {
     margin: 20px 20px;
     height: 90vh;
   }
@@ -158,7 +145,7 @@ p {
   :root {
     --flag-height: 200px;
   }
-  .box-ghana {
+  .box-botswana {
     margin: 20px 30px;
     height: 90vh;
   }
