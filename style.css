@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --palette-color1: #f2f2f2;
+  --palette-color2: #eae4d5;
+  --palette-color3: #b6b09f;
+  --palette-color4: #000000;
+}
 :root {
   --color1: #143D60;
   --color2: #27667B;
@@ -6,15 +17,56 @@
   --tile: 11;
   --grid-3: calc(11/3);
 }
-body {
-  background-color: var(--color4);
+html {
+  background-color: var(--palette-color1);
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--palette-color2);
+  padding: 10px 20px;
+}
+header div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header > div > p {
+  font-size: 19px;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header>div>p>a{
+  text-decoration: none;
+  color: var(--palette-color4)
+}
+header img {
+  height: 50px;
+  border-radius: 8px;
+}
+header nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header > nav > a {
+  border: 1px solid var(--palette-color3);
+  border-radius: 8px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--palette-color4);
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .box {
   width: 80vw;
   margin: 0 auto;
 }
 h1 {
-  color: var(--color1);
+  color: var(--palette-color4);
   text-align: center;
   font-size: 3rem;
 }
